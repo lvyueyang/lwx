@@ -1,0 +1,8 @@
+.btn-group {
+  padding: 20rpx;
+  background-color: #fff; }
+  .btn-group button {
+    margin-bottom: 20rpx; }
+
+.inline button {
+  margin-right: 10rpx; }

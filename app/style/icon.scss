@@ -1,0 +1,20 @@
+@import "./modules/base64";
+
+@font-face {
+    font-family: "iconfont";
+    src: url($base64-iconfont) format('woff');
+}
+
+.iconfont {
+    display: inline-block;
+    font-family: iconfont;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    text-rendering: auto;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    vertical-align: middle;
+}

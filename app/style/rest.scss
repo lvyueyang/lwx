@@ -1,0 +1,267 @@
+@import "modules/color";
+
+page, view, scroll-view, swiper, movable-area, cover-view, text, icon, rich-text,
+progress, button, checkbox-group, checkbox, form, input, label, picker,
+picker-view, radio-group, slider, switch, textarea, navigator, audio, image,
+video, live-player, live-pusher, open-data, web-view {
+    box-sizing: border-box;
+}
+
+page {
+    font-size: 30px;
+    background-color: #f3f3f3;
+    color: #000;
+}
+
+.hover-class-co {
+    background: #f7f7f7;
+}
+
+navigator {
+    display: inline-block;
+    color: $link-color;
+
+    &:active, &:link {
+        background: transparent;
+    }
+
+    &.navigator-hover {
+        background: none;
+        color: opacify($link-color, .8);
+    }
+}
+
+.cur {
+    cursor: pointer;
+}
+
+image {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.flex {
+    display: flex !important;
+}
+
+.al-c {
+    align-items: center;
+}
+
+.al-fs {
+    align-items: flex-start;
+}
+
+.al-fe {
+    align-items: flex-end;
+}
+
+.jc-c {
+    justify-content: center;
+}
+
+.jc-sb {
+    justify-content: space-between;
+}
+
+.jc-sa {
+    justify-content: space-around;
+}
+
+.jc-fe {
+    justify-content: flex-end;
+}
+
+.jc-fs {
+    justify-content: flex-start;
+}
+
+.list-loading {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.tab {
+    background-color: #fff;
+    height: 90px;
+    display: flex;
+    border-bottom: 1px solid #e5e5e5;
+
+    .item {
+        position: relative;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        &:after {
+            position: absolute;
+            content: '|';
+            right: 0;
+            top: 50%;
+            color: #e5e5e5;
+            font-weight: 400;
+            transform: translateY(-50%);
+        }
+
+        text {
+            height: 100%;
+            border: 5px solid transparent;
+            border-left: none;
+            border-right: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &:last-of-type {
+            &:after {
+                display: none;
+            }
+        }
+
+        &.active {
+            color: $main-color;
+
+            text {
+                position: relative;
+                border-bottom-color: $main-color;
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    border: 10px solid transparent;
+                    border-bottom-color: $main-color;
+                }
+            }
+        }
+    }
+}
+
+.link-list {
+    background-color: #fff;
+
+    .item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 90px;
+        padding: 0 25px;
+        color: #555;
+        border-bottom: 1px solid #f3f3f3;
+
+        .r {
+            background: url("data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiPjxkZWZzPjxzdHlsZT5AZm9udC1mYWNle2ZvbnQtZmFtaWx5OmVsZW1lbnQtaWNvbnM7c3JjOnVybCgmcXVvdDtjaHJvbWUtZXh0ZW5zaW9uOi8vbW9vbWJlb2Rmb21kcGpucG9jb2JlbW9pYWVtZWRua2cvZm9udHMvZWxlbWVudC1pY29ucy53b2ZmJnF1b3Q7KSBmb3JtYXQoJnF1b3Q7d29mZiZxdW90OyksdXJsKCZxdW90O2Nocm9tZS1leHRlbnNpb246Ly9tb29tYmVvZGZvbWRwam5wb2NvYmVtb2lhZW1lZG5rZy9mb250cy9lbGVtZW50LWljb25zLnR0ZiAmcXVvdDspIGZvcm1hdCgmcXVvdDt0cnVldHlwZSZxdW90Oyl9PC9zdHlsZT48L2RlZnM+PHBhdGggZD0iTTU2Mi4wMDUgNTEybC0yMTEuMi0yMTEuMiA2MC4zMzEtNjAuMzNMNjgyLjY2NiA1MTJsLTI3MS41MyAyNzEuNTMtNjAuMzMtNjAuMzN6IiBmaWxsPSIjY2NjIi8+PC9zdmc+") no-repeat right center;
+            background-size: 40px auto;
+            width: 30px;
+            height: 100%;
+        }
+
+        .l {
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .icon {
+            width: 60px;
+            height: 90px;
+            display: flex;
+            align-items: center;
+
+            image {
+                display: block;
+            }
+        }
+    }
+}
+
+.form-wrap {
+    font-size: 30px;
+
+    .form-item {
+        display: flex;
+        background-color: #fff;
+        border-bottom: .5PX solid #eee;
+
+        .label {
+            padding: 20px;
+            font-size: 30px;
+
+            &.j {
+                text-align: justify;
+                text-align-last: justify;
+            }
+        }
+
+
+        .content {
+            flex: 1;
+            padding-left: 20px;
+            text-align: right;
+            display: block;
+
+            &.text {
+                padding: 20px;
+            }
+
+
+            &.center {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                padding-right: 20px;
+            }
+
+            input {
+                height: 100%;
+                padding-right: 20px;
+            }
+
+            textarea {
+                padding: 6px 20px;
+                text-align: left;
+                width: 100%;
+                height: 200px;
+                line-height: 1.4;
+            }
+        }
+
+        picker {
+            display: flex;
+
+            view {
+                flex: 1;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: flex-end;
+                padding: 20px;
+            }
+        }
+    }
+}

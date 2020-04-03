@@ -1,0 +1,19 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/web-view/index"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#ffffff",
+        "navigationBarTitleText": "wxMiniPro",
+        "navigationBarTextStyle": "black"
+    },
+    "navigateToMiniProgramAppIdList": [],
+    "usingComponents": {
+        "l-modal": "./global-components/l-modal/index",
+        "l-header": "./global-components/l-header/index",
+        "l-auth": "./global-components/l-auth/index"
+    },
+    "sitemapLocation": "sitemap.json"
+}

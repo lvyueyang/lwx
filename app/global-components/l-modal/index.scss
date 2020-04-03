@@ -1,0 +1,83 @@
+@import "../../style/animation.wxss";
+@import "../../style/modules/function";
+@import "../../style/modules/color";
+
+.modal-root {
+    display: none;
+}
+
+.show {
+    display: block;
+
+    //.modal-cover {
+    //    animation: fadeShow 1s;
+    //    animation-fill-mode: forwards;
+    //}
+}
+
+.modal-cover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    background: rgba(0, 0, 0, .4);
+    opacity: 1;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    background: transparent;
+    display: flex;
+    align-items: flex-end;
+    font-size: rpx(30px);
+    opacity: 1;
+    animation: none;
+
+    .modal-wrapper {
+        background-color: #fff;
+        width: 100%;
+        min-height: 50vh;
+    }
+
+    $header-height: rpx(90);
+
+    .modal-header {
+        position: relative;
+        height: $header-height;
+        display: flex;
+        align-items: center;
+        padding: 0 rpx(30);
+        border-bottom: .5px solid #bbb;
+        font-size: rpx(35);
+
+        .close {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: $header-height;
+            height: calc(#{$header-height} - .5px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: rpx(50);
+            cursor: pointer;
+        }
+    }
+
+    .modal-body {
+        max-height: calc(85vh - #{$header-height});
+    }
+}
+
+.ipx {
+    .modal-body {
+        padding-bottom: 34px;
+    }
+}

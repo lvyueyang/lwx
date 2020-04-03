@@ -1,0 +1,106 @@
+.btn {
+  line-height: 1;
+  white-space: nowrap;
+  text-align: center;
+  display: block;
+  background: #4ba1f1;
+  color: #fff;
+  font-size: 32rpx;
+  padding: 25rpx 35rpx;
+  border-radius: 4rpx; }
+  .btn:after {
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0; }
+  .btn.button-hover, .btn.navigator-hover {
+    background-color: rgba(75, 161, 241, 0.7); }
+  .btn.btn-text {
+    color: #4ba1f1;
+    border: none;
+    background: transparent; }
+    .btn.btn-text.button-hover, .btn.btn-text.navigator-hover {
+      background-color: rgba(75, 161, 241, 0.7);
+      color: #fff; }
+  .btn.inline {
+    display: inline-block;
+    padding-left: 20rpx;
+    padding-right: 20rpx; }
+  .btn.btn-success {
+    background: #19be6b;
+    color: #fff;
+    font-size: 32rpx;
+    padding: 25rpx 35rpx;
+    border-radius: 4rpx; }
+    .btn.btn-success.button-hover, .btn.btn-success.navigator-hover {
+      background-color: rgba(25, 190, 107, 0.7); }
+    .btn.btn-success.btn-text {
+      color: #19be6b;
+      border: none;
+      background: transparent; }
+      .btn.btn-success.btn-text.button-hover, .btn.btn-success.btn-text.navigator-hover {
+        background-color: rgba(25, 190, 107, 0.7);
+        color: #fff; }
+    .btn.btn-success.inline {
+      display: inline-block;
+      padding-left: 20rpx;
+      padding-right: 20rpx; }
+  .btn.btn-warning {
+    background: #ff976a;
+    color: #fff;
+    font-size: 32rpx;
+    padding: 25rpx 35rpx;
+    border-radius: 4rpx; }
+    .btn.btn-warning.button-hover, .btn.btn-warning.navigator-hover {
+      background-color: rgba(255, 151, 106, 0.7); }
+    .btn.btn-warning.btn-text {
+      color: #ff976a;
+      border: none;
+      background: transparent; }
+      .btn.btn-warning.btn-text.button-hover, .btn.btn-warning.btn-text.navigator-hover {
+        background-color: rgba(255, 151, 106, 0.7);
+        color: #fff; }
+    .btn.btn-warning.inline {
+      display: inline-block;
+      padding-left: 20rpx;
+      padding-right: 20rpx; }
+  .btn.btn-error {
+    background: #e64340;
+    color: #fff;
+    font-size: 32rpx;
+    padding: 25rpx 35rpx;
+    border-radius: 4rpx; }
+    .btn.btn-error.button-hover, .btn.btn-error.navigator-hover {
+      background-color: rgba(230, 67, 64, 0.7); }
+    .btn.btn-error.btn-text {
+      color: #e64340;
+      border: none;
+      background: transparent; }
+      .btn.btn-error.btn-text.button-hover, .btn.btn-error.btn-text.navigator-hover {
+        background-color: rgba(230, 67, 64, 0.7);
+        color: #fff; }
+    .btn.btn-error.inline {
+      display: inline-block;
+      padding-left: 20rpx;
+      padding-right: 20rpx; }
+  .btn.btn-cancel {
+    background: #c5c8ce;
+    color: #fff;
+    font-size: 32rpx;
+    padding: 25rpx 35rpx;
+    border-radius: 4rpx; }
+    .btn.btn-cancel.button-hover, .btn.btn-cancel.navigator-hover {
+      background-color: rgba(197, 200, 206, 0.7); }
+    .btn.btn-cancel.btn-text {
+      color: #c5c8ce;
+      border: none;
+      background: transparent; }
+      .btn.btn-cancel.btn-text.button-hover, .btn.btn-cancel.btn-text.navigator-hover {
+        background-color: rgba(197, 200, 206, 0.7);
+        color: #fff; }
+    .btn.btn-cancel.inline {
+      display: inline-block;
+      padding-left: 20rpx;
+      padding-right: 20rpx; }
+  .btn .icon, .btn .iconfont {
+    vertical-align: middle; }

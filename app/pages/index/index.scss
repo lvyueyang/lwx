@@ -1,0 +1,17 @@
+@import "../../style/modules/color";
+@import "../../style/modules/function";
+
+.btn-group {
+    padding: 20px;
+    background-color: #fff;
+
+    button {
+        margin-bottom: 20px;
+    }
+}
+
+.inline {
+    button {
+        margin-right: 10px;
+    }
+}

@@ -1,0 +1,71 @@
+@import "modules/color";
+
+@mixin btn-type(
+    $bg-color,
+    $font-color: #fff,
+    $font-size: 32px,
+    $radius: 4px,
+    $padding: 25px 35px
+) {
+    background: $bg-color;
+    color: $font-color;
+    font-size: $font-size;
+    padding: $padding;
+    border-radius: $radius;
+    &.button-hover, &.navigator-hover {
+        background-color: transparentize($bg-color, .3);
+    }
+    &.btn-text {
+        color: $bg-color;
+        border: none;
+        background: transparent;
+
+        &.button-hover, &.navigator-hover {
+            background-color: transparentize($bg-color, .3);
+            color: #fff;
+        }
+    }
+
+
+    &.inline {
+        display: inline-block;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.btn {
+    line-height: 1;
+    white-space: nowrap;
+    text-align: center;
+    display: block;
+
+    &:after {
+        border: none;
+        background: transparent;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    @include btn-type($main-color);
+
+    &.btn-success {
+        @include btn-type(#19be6b);
+    }
+
+    &.btn-warning {
+        @include btn-type(#ff976a);
+    }
+
+    &.btn-error {
+        @include btn-type(#e64340);
+    }
+
+    &.btn-cancel {
+        @include btn-type(#c5c8ce);
+    }
+
+    .icon, .iconfont {
+        vertical-align: middle;
+    }
+}

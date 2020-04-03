@@ -1,0 +1,109 @@
+<l-header>LWX</l-header>
+<view style="margin-top: 20px;"></view>
+<view style="text-align: center;font-size: 20px;">微信原生开发辅助框架</view>
+<view style="margin-top: 20px;"></view>
+<view class="tab">
+    <view class="item active">
+        <text>选项1</text>
+    </view>
+    <view class="item">
+        <text>选项2</text>
+    </view>
+    <view class="item">
+        <text>选项3</text>
+    </view>
+</view>
+<view style="margin-top: 20px;"></view>
+<view class="form-wrap">
+    <view class="form-item">
+        <view class="label">
+            这是标题：
+        </view>
+        <view class="content text">
+            这是内容
+        </view>
+    </view>
+    <view class="form-item">
+        <view class="label">
+            多选：
+        </view>
+        <label class="content center">
+            <checkbox></checkbox>
+        </label>
+    </view>
+    <view class="form-item">
+        <view class="label">
+            单选：
+        </view>
+        <label class="content center">
+            <radio></radio>
+        </label>
+    </view>
+    <view class="form-item">
+        <view class="label">
+            下拉：
+        </view>
+        <picker class="content" mode="date">
+            <view>选择日期</view>
+        </picker>
+    </view>
+
+    <view class="form-item">
+        <view class="label">
+            输入框：
+        </view>
+        <label class="content">
+            <input type="text" placeholder="这是输入框"/>
+        </label>
+    </view>
+    <view class="form-item">
+        <view class="label">
+            输入框：
+        </view>
+        <label class="content">
+            <textarea placeholder="这是长文本输入框"></textarea>
+        </label>
+    </view>
+</view>
+<view style="margin-top: 20px;"></view>
+<view class="link-list">
+    <navigator class="item" url="">
+        <view class="l">这是名称1</view>
+        <view class="r"></view>
+    </navigator>
+    <navigator class="item" url="">
+        <view class="l">
+            <!--<text class="icon"><image src=""></image></text>-->
+            <text class="icon">图</text>
+            带有图标的
+        </view>
+        <view class="r"></view>
+    </navigator>
+</view>
+<view style="margin-top: 20px;"></view>
+<view class="list-loading">加载中</view>
+<view style="margin-top: 20px;"></view>
+<view class="btn-group">
+    <button class="btn" bindtap="handlerAuth">打开用户信息授权</button>
+</view>
+<view style="margin-top: 20px;"></view>
+<view class="btn-group">
+    <button class="btn">按钮</button>
+    <button class="btn btn-cancel">按钮</button>
+    <button class="btn btn-warning">按钮</button>
+    <button class="btn btn-success">按钮</button>
+</view>
+<view class="btn-group">
+    <button class="btn btn-text">按钮</button>
+    <button class="btn btn-cancel btn-text">按钮</button>
+    <button class="btn btn-warning btn-text">按钮</button>
+    <button class="btn btn-success btn-text">按钮</button>
+</view>
+<view class="btn-group inline">
+    <button class="btn inline">行内按钮</button>
+    <button class="btn btn-cancel inline">行内按钮</button>
+    <button class="btn btn-warning inline">行内按钮</button>
+    <button class="btn btn-success inline">行内按钮</button>
+</view>
+<view style="height: 34px;"></view>
+<l-auth id="Auth"></l-auth>

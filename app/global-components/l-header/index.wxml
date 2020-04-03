@@ -1,0 +1,8 @@
+<view style="height:{{height}}px;"></view>
+<view class="lk-custom-header" style="height:{{height}}px;padding-top: {{barHeight}}px;">
+    <view class="icon-list">
+        <view class="icon back" wx:if="{{back.show}}" hover-class="hover"></view>
+        <view class="icon home" hover-class="hover"></view>
+    </view>
+    <view class="title"><slot></slot></view>
+</view>

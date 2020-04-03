@@ -1,0 +1,58 @@
+@import "../../style/animation.wxss";
+.modal-root {
+  display: none; }
+
+.show {
+  display: block; }
+
+.modal-cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 1; }
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  background: transparent;
+  display: flex;
+  align-items: flex-end;
+  font-size: 30pxrpx;
+  opacity: 1;
+  animation: none; }
+  .modal .modal-wrapper {
+    background-color: #fff;
+    width: 100%;
+    min-height: 50vh; }
+  .modal .modal-header {
+    position: relative;
+    height: 90rpx;
+    display: flex;
+    align-items: center;
+    padding: 0 30rpx;
+    border-bottom: .5px solid #bbb;
+    font-size: 35rpx; }
+    .modal .modal-header .close {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 90rpx;
+      height: calc(90rpx - .5px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 50rpx;
+      cursor: pointer; }
+  .modal .modal-body {
+    max-height: calc(85vh - 90rpx); }
+
+.ipx .modal-body {
+  padding-bottom: 34px; }

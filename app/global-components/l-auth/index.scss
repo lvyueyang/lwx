@@ -1,0 +1,56 @@
+@import "../../style/modules/function";
+
+.auth-modal-wrapper {
+    border-top-left-radius: rpx(15) !important;
+    border-top-right-radius: rpx(15) !important;
+    min-height: 20vh !important;
+}
+
+.auth-modal {
+    padding: rpx(40) rpx(40) rpx(20) rpx(40);
+
+    .content {
+        font-size: rpx(38);
+        margin-bottom: rpx(40);
+    }
+
+    .user-info {
+        display: flex;
+        align-items: center;
+        margin: rpx(40) auto;
+        border-bottom: .5px solid #ccc;
+        border-top: .5px solid #ccc;
+        padding: rpx(30) 0;
+
+        .avatar {
+            $width: rpx(90);
+            flex: 0 0 $width;
+            width: $width;
+            height: $width;
+            border-radius: rpx(10);
+            margin-right: rpx(30);
+        }
+
+        .name {
+            font-size: rpx(30);
+        }
+
+        .subtitle {
+            font-size: rpx(25);
+            color: #666;
+        }
+    }
+
+    .operate-btn {
+        display: flex;
+
+        .btn {
+            flex: 1;
+        }
+
+        .btn-cancel {
+            flex: 0 0 30%;
+            margin-right: rpx(30);
+        }
+    }
+}

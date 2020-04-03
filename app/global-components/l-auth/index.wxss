@@ -1,0 +1,35 @@
+.auth-modal-wrapper {
+  border-top-left-radius: 15rpx !important;
+  border-top-right-radius: 15rpx !important;
+  min-height: 20vh !important; }
+
+.auth-modal {
+  padding: 40rpx 40rpx 20rpx 40rpx; }
+  .auth-modal .content {
+    font-size: 38rpx;
+    margin-bottom: 40rpx; }
+  .auth-modal .user-info {
+    display: flex;
+    align-items: center;
+    margin: 40rpx auto;
+    border-bottom: .5px solid #ccc;
+    border-top: .5px solid #ccc;
+    padding: 30rpx 0; }
+    .auth-modal .user-info .avatar {
+      flex: 0 0 90rpx;
+      width: 90rpx;
+      height: 90rpx;
+      border-radius: 10rpx;
+      margin-right: 30rpx; }
+    .auth-modal .user-info .name {
+      font-size: 30rpx; }
+    .auth-modal .user-info .subtitle {
+      font-size: 25rpx;
+      color: #666; }
+  .auth-modal .operate-btn {
+    display: flex; }
+    .auth-modal .operate-btn .btn {
+      flex: 1; }
+    .auth-modal .operate-btn .btn-cancel {
+      flex: 0 0 30%;
+      margin-right: 30rpx; }

@@ -1,0 +1,22 @@
+<view class="modal-root {{ipx ? 'ipx' : ''}} {{show ? 'show' : 'hide'}}">
+    <view class="modal-cover" style="background-color: {{backgroundOpacity}}"></view>
+    <view class=modal" bindtap="handlerMaskCloseModal">
+        <view class="modal-wrapper lk-wrapper-class">
+            <view class="modal-header" wx:if="{{!headerHide}}">
+                <view class="header-title">
+                    <block wx:if="{{title}}">{{title}}</block>
+                    <slot name="title" wx:else></slot>
+                </view>
+                <view class="close"
+                      hover-class="hover-class-co"
+                      wx:if="{{closeIcon}}"
+                      bindtap="handlerClose">
+                    <text class="remix-icon remix-icon-close-line"></text>
+                </view>
+            </view>
+            <scroll-view class="modal-body" scroll-y="{{true}}">
+                <slot></slot>
+            </scroll-view>
+        </view>
+    </view>
+</view>

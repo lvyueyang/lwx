@@ -1,0 +1,22 @@
+module.exports = {
+    /**
+     * 判断是否包含
+     * @param {String | Array} val 原始数据
+     * @param {String} str 目标字符串
+     *
+     * @return {String}
+     * */
+    includes: function (val, str) {
+        return val.indexOf(str) !== -1
+    },
+    lineClamp: function (val, number) {
+        number = number || 20
+        if (!val) {
+            return val
+        }
+        if (val.length <= number) {
+            return val
+        }
+        return val.substring(0, number) + '...'
+    }
+}
