@@ -1,12 +1,13 @@
 {
     "pages": [
         "pages/index/index",
+        "pages/demo/index",
         "pages/web-view/index"
     ],
     "window": {
         "backgroundTextStyle": "light",
         "navigationBarBackgroundColor": "#ffffff",
-        "navigationBarTitleText": "wxMiniPro",
+        "navigationBarTitleText": "LWX",
         "navigationBarTextStyle": "black"
     },
     "navigateToMiniProgramAppIdList": [],

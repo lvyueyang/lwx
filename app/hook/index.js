@@ -69,7 +69,13 @@ Page = options => {
 }
 Component = options => {
     if (typeof options.methods == 'object') {
-        for (let [key, value] of Object.entries(mixins)) {
+        for (let [key, value] of Object.entries(hookOption)) {
+            if (['data', '$utils', '$api'].includes(key)) {
+                options[key] = {
+                    ...value,
+                    ...options[key]
+                }
+            }
             if (typeof value === 'function') {
                 const originFunction = options.methods[key]
                 options.methods[key] = function (...args) {

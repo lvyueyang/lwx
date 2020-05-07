@@ -1,0 +1,5 @@
+<view class="box" hover-class="hover-class" hover-stay-time="100" bindtap="handlerAdd">
+    <view class="list">
+        <text class="item" wx:for="{{list}}" wx:key="id">{{item.text}}</text>
+    </view>
+</view>
