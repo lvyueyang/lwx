@@ -13,26 +13,6 @@ const hookOption = {
     onLoad(option) {
         setShare.call(this)
     },
-    onShow() {
-    },
-    onReady() {
-    },
-    onHide() {
-    },
-    onUnload() {
-    },
-    onPullDownRefresh() {
-    },
-    onReachBottom() {
-    },
-    onShareAppMessage() {
-    },
-    onPageScroll() {
-    },
-    onResize() {
-    },
-    onTabItemTap(item) {
-    },
     ...mixins
 }
 
@@ -67,21 +47,23 @@ Page = options => {
     }
     originPage(options)
 }
+
 Component = options => {
-    if (typeof options.methods == 'object') {
-        for (let [key, value] of Object.entries(hookOption)) {
-            if (['data', '$utils', '$api'].includes(key)) {
-                options[key] = {
-                    ...value,
-                    ...options[key]
-                }
+    if (typeof options.methods !== 'object') {
+        options.methods = {}
+    }
+    for (let [key, value] of Object.entries(hookOption)) {
+        if (['data'].includes(key)) {
+            options[key] = {
+                ...value,
+                ...options[key]
             }
-            if (typeof value === 'function') {
-                const originFunction = options.methods[key]
-                options.methods[key] = function (...args) {
-                    value.call(this, ...args)
-                    return originFunction && originFunction.call(this, ...args)
-                }
+        }
+        if (typeof value === 'function') {
+            const originFunction = options.methods[key]
+            options.methods[key] = function (...args) {
+                value.call(this, ...args)
+                return originFunction && originFunction.call(this, ...args)
             }
         }
     }
