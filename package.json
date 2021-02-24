@@ -1,19 +1,22 @@
 {
-    "name": "LWX",
-    "version": "1.0.0",
-    "description": "微信小程序原生开发辅助框架，像一个游戏辅助一样来帮助你快速通关微信小程序开发。",
-    "main": "gulpfile.js",
-    "author": "975794403@qq.com",
-    "license": "ISC",
-    "dependencies": {
-        "gulp": "^3.9.1",
-        "gulp-px2rpx": "^0.2.2",
-        "gulp-rename": "^1.4.0",
-        "gulp-replace": "^1.0.0",
-        "gulp-sass": "^4.0.1",
-        "map-stream": "^0.0.7",
-        "minimist": "^1.2.0",
-        "process.args": "^0.0.6"
-    },
-    "devDependencies": {}
+  "name": "LWX",
+  "version": "1.0.0",
+  "description": "微信小程序原生开发辅助框架，像一个游戏辅助一样来帮助你快速通关微信小程序开发。",
+  "main": "gulpfile.js",
+  "author": "975794403@qq.com",
+  "license": "ISC",
+  "scripts":{
+    "start": "gulp serve"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-px2rpx": "^0.2.2",
+    "gulp-rename": "^1.4.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.0.1",
+    "map-stream": "^0.0.7",
+    "minimist": "^1.2.0",
+    "process.args": "^0.0.6"
+  },
+  "devDependencies": {}
 }

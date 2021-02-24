@@ -1,3 +1,4 @@
 node_modules
 app/project.config.json
 .idea
+yarn.lock
